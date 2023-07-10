@@ -1,0 +1,57 @@
+ •    Ctrl   Slash 	:for single line comments (  //...  )
+•    Ctrl   Shift   Slash  : for block comments (  /*...*/  )
+
+self.label_2.setStyleSheet('image: url("C:/Users/Amel/Desktop/homepage+controls/ICONS/R1.png");')
+
+TO RESIZE THE PIC
+
+avatar_image = QtGui.QPixmap()
+avatar_image.loadFromData(avatar_data)
+scaled_image = avatar_image.scaled(201, 111, QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
+self.ui.frameF.setPixmap(scaled_image)
+
+*****************************
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Dialog = QtWidgets.QDialog()
+    ui = Ui_Dialog()
+    ui.setupUi(Dialog)
+    Dialog.show()
+    sys.exit(app.exec_())
+********************************************
+//
+self.label_2.setStyleSheet('image: url("C:/Users/Amel/Desktop/FirstProject/ICONS/Robot2.png");') 
+//code image
+self.label_2.setStyleSheet('background-image: url("C:/Users/Amel/Desktop/FirstProject/ICONS/Robot2.png");')
+******************************************************************
+
+//external tool 
+C:\Users\Amel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts\pyuic5.exe     //program
+
+$FileName$ -o $FileNameWithoutExtension$.py //arguments
+
+****************************************************************************************
+
+// to show image as an icon in tablewidget : 
+item = QtWidgets.QTableWidgetItem('')
+                    icon = QtGui.QIcon(column_data)
+                    icon = icon.pixmap(QtCore.QSize(200, 200))
+                    item.setIcon(QtGui.QIcon(column_data))
+                    self.ui.table_employees.setItem(tablerow, column_number - 1, item)
+******************************************************************
+
+//maximized the dialog 
+class MyDialog(QtWidgets.QDialog, Ui_Dialog):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+	  self.showMaximized()
+or 
+class MyDialog(QtWidgets.QDialog, Ui_Dialog):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+
+        # set the windowFlags to start in maximized state
+        self.setWindowFlags(self.windowFlags() | QtCore.Qt.WindowMaximized)
