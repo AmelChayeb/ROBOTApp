@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>anpr code + databse check/license_plate.png</file>
+    <file>license_plate.png</file>
+  </qresource>
+</RCC>
